@@ -33,7 +33,7 @@
             <h6 class="m-0 font-weight-bold text-sucbtn-success">Hypertext Markup Languages</h6>
           </div>
           <div class="card-body">
-            <form action="{{route('htmlstore')}}" method="PUT" enctype="multipart/form-data">
+            <form action="{{route('htmlstore')}}" method="post" enctype="multipart/form-data">
               @csrf
               <div class="form-group">
                 <label for="foto">Gambar</label>
@@ -42,13 +42,13 @@
                   <label for="hari">Hari</label>
                   <select class="form-control" name="hari" id="hari">
                       <option>Pilih Hari</option>
-                      <option>Senin</option>
-                      <option>Selasa</option>
-                      <option>Rabu</option>
-                      <option>Kamis</option>
-                      <option>Jum at</option>
-                      <option>Sabtu</option>
-                      <option>Minggu</option>
+                      <option>SENIN</option>
+                      <option>SELASA</option>
+                      <option>RABU</option>
+                      <option>KAMIS</option>
+                      <option>JUM AT</option>
+                      <option>SABTU</option>
+                      <option>MINGGU</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -61,7 +61,7 @@
                 </div>
                 <div class="form-group">
                   <label for="sub_judul">Sub Judul</label>
-                  <input type="text" class="form-control" name="sub_judul" id="sub_judul" placeholder="Masukan Sub Judul"/>
+                  <input type="text" class="form-control" name="sub_judul" id="sub_judul" placeholder="Masukan Sub Judul" />
                 </div>
                 <div class="form-group">
                   <label for="aktor">aktor</label>

@@ -1,283 +1,417 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajarkoding.awaid</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
 
-    <title>Portfolio</title>
-  </head>
-  <body>
+  <!-- awal navbar -->
+    
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+          <img src="libraries/img/logo belajarkoding.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tutorial.html">Tutorial</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Materi
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="theory_html.html">HTML</a></li>
+              <li><a class="dropdown-item" href="#">CSS</a></li>
+              <li><a class="dropdown-item" href="#">Javascipt</a></li>
+              <li><a class="dropdown-item" href="#">PHP</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Question
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="question_html.html">HTML</a></li>
+              <li><a class="dropdown-item" href="#">CSS</a></li>
+              <li><a class="dropdown-item" href="#">Javascipt</a></li>
+              <li><a class="dropdown-item" href="#">PHP</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Score
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="score_html.html">HTML</a></li>
+              <li><a class="dropdown-item" href="#">CSS</a></li>
+              <li><a class="dropdown-item" href="#">Javascipt</a></li>
+              <li><a class="dropdown-item" href="#">PHP</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Service</a>
+          </li>
+        </ul>
 
-   
-    <!-- awak navbar -->
+        <ul class="navbar-nav login">
+          <li class="nav-item">
+            <a href="#">LOGIN</a>
+            <a href="#">SIGN UP</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+
+<!-- akhir navbar -->
+
+<!-- awal header -->
+
+      <div class="header">
         <div class="container">
-            <a class="navbar-brand" href="#" style="font-weight: 700;">AWA</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="is_coding.html">What is Coding</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tutorial.html">Tutorial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tutorial.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <a class="nav-link text-white pr-3" href="" data-toggle="modal" data-target=".bd-example-modal-lg">Login</a>
-                    <a class="nav-link p-1 bg-white" href=""
-                        style="color: #3750CC; width: 90px; text-align: center; font-weight: 600; border-radius: 18px;">Join
-                        us</a>
-                </form>
+          <div class="row">
+            <div class="col text-center">
+              <img src="libraries/img/Group 156.png">
             </div>
-        </div>
-    </nav>
-
-    <!-- akhir navbar -->
-
-    <!-- awal jumbotron-->
-
-
-    <div class="jumbotron bg-primary jumbotron-fluid">
-        <div class="container">
-          <div class="row text-center">
-              <div class="col">
-                  <img src="img/p.jpg" width="200px">
-                  <h2>Aji Wahyugi Asytar</h2>
-                  <span>Mahasiswa || Web Designer || Web Developer</span>
-              </div>
           </div>
         </div>
       </div>
 
-    <!-- akhir jumbotron -->
+<!-- akhir header -->
 
-    <!-- awal box menu -->
 
-      <div class="box-menu" style="margin-top: -100px;">
-          <div class="container">
-              <div class="row justify-content-center text-center">
-                  <div class="col mx-2 my-2 img-thumbnail" style="box-shadow: 3px 3px 6px rgb(153, 153, 153);">
-                    <section>
-                        <img src="img/box-menu/3.png">
-                        <h4>Mahasiswa</h4 >
-                        <button class="btn text-white bg-success my-2">View</button>
-                    </section>
-                  </div>
-                  <div class="col mx-2 my-2 img-thumbnail" style="box-shadow: 3px 3px 6px rgb(153, 153, 153);">
-                    <section>
-                        <img src="img/box-menu/3.png">
-                        <h4>Web Designer</h4 >
-                        <button class="btn text-white bg-success my-2">View</button>
-                    </section>
-                  </div>
-                  <div class="col mx-2 my-2 img-thumbnail" style="box-shadow: 3px 3px 6px rgb(153, 153, 153);">
-                    <section>
-                        <img src="img/box-menu/3.png">
-                        <h4>Web Developer</h4 >
-                        <button class="btn text-white bg-success my-2">View</button>
-                    </section>
-                  </div>
-              </div>
-          </div>
+<div class="main about" >
+  <div class="container" style="margin-bottom: 100px; margin-top: 80px;">
+    <div class="row">
+      <div class="col-md-6 col-lg-6">
+        <img src="libraries/img/2.png" width="500px" class="pt-5">
       </div>
-      
-    <!-- akhir box menu -->
+      <div class="col-md-6 col-lg-6">
+        <span class="font-weight-bold">Intro</span>
+        <h2 class="font-weight-bold">About Me</h2>
+        <p class="">Since starting my journey as a student for almost 4 years, I have studied both on and off campus and collaborated with talented people to create small startup teams. I am secretly confident, naturally curious, and constantly learning to fix problems in the field I am studying</p>
+        <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <th>Nama</th>
+              <td>:</td>
+              <td>Aji Wahyugi</td>
+            </tr>
+            <tr>
+              <th>Phone</th>
+              <td>:</td>
+              <td>+62 896-4392-9650</td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td>:</td>
+              <td>ajiwahyugi.carrer@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
 
-    <!-- awal gallery -->
+        <h5 class="font-weight-bold">My Hobby</h5>
+        <span class="p-2">
+          <i class="fa fa-book"></i>
+          Book
+        </span>
+        <span class="p-2">
+          <i class="fa fa-music"></i>
+          Music
+        </span>
+        <span class="p-2">
+          <i class="fa fa-balance-scale-left"></i>
+          Realtime
+        </span>
+        <span class="p-2">
+          <i class="fa fa-gamepad"></i>
+          Playing
+        </span>
+        <span class="p-2">
+          <i class="fa fa-laptop"></i>
+          Ngoding
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <div class="gallery mb-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <h3 style="font-family:'Script MT', 'sans-serif'">Gallery</h3>
-                    <hr style="width: 130px;">
-                </div>
+
+<div class="main kulifikasi">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center pt-4">
+        <h5>This is</h5>
+        <h2 class="font-weight-bold" id="portfolio">My Portfolio</h2>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 pt-sm-2 pt-2 gambar">
+        <img src="libraries/img/kualifikasi/8.jpg" class="img-thumbnail image">
+       
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 pt-sm-2 pt-2 gambar">
+        <img src="libraries/img/kualifikasi/4.jpg" class="img-thumbnail image">
+        
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 pt-sm-2 pt-2 gambar">
+        <img src="libraries/img/kualifikasi/5.jpg" class="img-thumbnail image">
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 pt-sm-2 pt-2 gambar">
+        <img src="libraries/img/kualifikasi/6.jpg" class="img-thumbnail image">
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 pt-sm-2 pt-2 gambar">
+        <img src="libraries/img/kualifikasi/7.jpg" class="img-thumbnail image">
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 pt-sm-2 pt-2 gambar">
+        <img src="libraries/img/kualifikasi/3.jpg" class="img-thumbnail image">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col py-3 text-center">
+        <a href="">Views All</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section">
+  <div class="container mt-5">
+    <div class="row mt-5">
+      <div class="col-12 col-lg-7 col-md-10 col-sm-10 mt-5">
+        <h1>Have a Project on Your Mind</h1>
+        <p class="mt-2">I'm a bit of a digital product junky. Over the years, I've used hundreds of web and mobile apps in different industries and verticals. Eventually, I decided that it would be a fun challenge to try designing and building my own.</p>
+        <div class="btn btn-success mt-2">Contact Me</div>
+      </div>
+      <div class="col col-lg-5 d-none d-sm-md-block d-lg-inline">
+          <img src="libraries/img/kualifikasi/10.png" width="400px" height="300px">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="main offer">
+  <div class="container mt-5">
+    <div class="row mb-3">
+      <div class="col text-center" id="work">
+        <span>This Is</span>
+        <h2 class="font-weight-bold">Work Experience</h2>
+      </div>
+    </div>
+    
+    <div class="row m-auto">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 border offer-biodata">
+        <img src="libraries/img/kualifikasi/telkom.png" width="100px" height="60px" class="pt-2">
+        <h5 class="pt-3 font-weight-bold">Telekomunikasi Indonesia</h5>
+        <h6 class="font-weight-bold">Teknisi Indihome</h6>
+        <p>Bertanggung jawab untuk pemasangan baru jaringan Wi-fi dan TV Kabel</p>
+        <span>Periode :</span>
+        <input type="text" value="Nov-2016 -> Juli-2017" disabled class="mb-3">
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 border offer-biodata">
+        <img src="libraries/img/kualifikasi/dbs_logo.svg" width="100px" height="60px" class="pt-2">
+        <h5 class="pt-2 font-weight-bold">Bank DBS Singapore</h5>
+        <h6 class="font-weight-bold">Telemarketing</h6>
+        <p>Bertanggung jawab menawarkan pinjaman uang kepada nasabah.</p>
+        <span>Periode :</span>
+        <input type="text" value="Des-2017->Januari-2018" disabled class="mb-3">
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 border offer-biodata">
+        <img src="libraries/img/kualifikasi/indo.png" width="100px" height="50px" class="pt-3">
+        <h5 class="pt-3 font-weight-bold">PT. Indomarco Prismatama</h5>
+        <h6 class="font-weight-bold">Pramuniaga</h6>
+        <p>Bertanggung jawab mengelola, membersihkan toko dan menjadi kasir, untuk keperluan apa saja.</p>
+        <span>Periode :</span>
+        <input type="text" value="Maret-2018 -> Sep-2018" disabled class="mb-3">
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 border offer-biodata">
+        <img src="libraries/img/kualifikasi/sky.png" width="100px" height="60px" class="pt-2">
+        <h5 class="pt-2 font-weight-bold">Skyreach</h5>
+        <h6 class="font-weight-bold">Teknisi</h6>
+        <p>Bertanggung jawab pemasangan satlit untuk media penyiaran, oprator Telekomunikasi</p>
+        <span>Periode :</span>
+        <input type="text" value="Menolak Tawaran" disabled class="mb-3">
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 border offer-biodata">
+        <img src="libraries/img/kualifikasi/himti.png" width="90px" height="60px" class="pt-2">
+        <h5 class="pt-2 font-weight-bold">HIMTI</h5>
+        <h6 class="font-weight-bold">Anggota [Devisi Agama]</h6>
+        <p class="pb-3">Himpunan Mahasiswa Teknik Informatika Universitas Muhammadiyah Tangerang.</p>
+        <span>Periode :</span>
+        <input type="text" value="Sebagai Mahasiswa" disabled class="mb-3">
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 border offer-biodata">
+        <img src="libraries/img/kualifikasi/dk.png" width="90px" height="40px" class="pt-2">
+        <h5 class="pt-3 font-weight-bold">Team Startup</h5>
+        <h6 class="font-weight-bold">UX/UI & Front-End Developer</h6>
+        <p>Deka.com adalah startup kecil atau dibilang sederhana yang menyediakan tutorial web programming dan les kursus.</p>
+        <span>Periode :</span>
+        <input type="text" value="Mahasiswa Akhir" disabled class="mb-3">
+      </div>
+    </div>
+  </div>  
+</div>
+
+
+<div class="section slider">
+  <div class="container">
+    <div class="row my-5">
+      <div class="col text-center">
+        <span>This Is</span>
+        <h2 class="font-weight-bold" id="hereme">UX / UI</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-8 col-sm-7 mt-3 col-md-5 col-lg-3 m-auto text-center py-5 shadow p-3 bg-white rounded">
+        <svg width="5em"  viewBox="0 0 16 16" class="bi bi-grid-3x2-gap-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9z"/>
+        </svg>
+        <br>
+        <span>User Experience</span>
+        <p class="mt-4">is a person's emotions and attitudes about using a particular the partical, experiential</p>
+        <div class="btn btn-primary mt-4">Find Out More</div>
+      </div>
+      <div class="col-8 col-sm-7 mt-3 col-md-5 col-lg-3 m-auto text-center py-5 shadow p-3 bg-white rounded">
+        <svg width="5em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+          <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+        </svg>
+        <br>
+        <span>User Interface </span>
+        <p class="mt-4">is the point at which human users intereact with a a computer, website appliaction </p>
+        <div class="btn btn-primary mt-4">Find Out More</div>
+      </div>
+      <div class="col-8 col-sm-7 mt-3 col-md-5 col-lg-3 m-auto text-center py-5 shadow p-3 bg-white rounded">
+        <svg width="5em"  viewBox="0 0 16 16" class="bi bi-signpost-2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 1.414V16h2V1.414a1 1 0 0 0-2 0z"/>
+          <path d="M1 3a1 1 0 0 1 1-1h11.5a1 1 0 0 1 .8.4l.975 1.3a.5.5 0 0 1 0 .6L14.3 5.6a1 1 0 0 1-.8.4H2a1 1 0 0 1-1-1V3zm14 5a1 1 0 0 0-1-1H2.5a1 1 0 0 0-.8.4L.725 8.7a.5.5 0 0 0 0 .6l.975 1.3a1 1 0 0 0 .8.4H14a1 1 0 0 0 1-1V8z"/>
+        </svg><br>
+        <span>Prototype</span>
+        <p class="mt-4">A prototype is an early sample, model, or realease of a product built to test a concept or process. </p>
+        <div class="btn btn-primary mt-4">Find Out More</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- awal gallery -->
+
+<div class="gallery mb-5 mt-5">
+    <div class="container">
+        <div class="row" id="gallery">
+            <div class="col text-center mt-4">
+              <span>This is</span>
+                <h3 class="font-weight-bold mb-5">Gallery</h3>
             </div>
+        </div>
 
-            <div class="row justify-content-center">
-                <div class="col-6 col-md-5 col-lg-3">
-                    <img src="img/portfolio/gallery/1.png">
-                    <img src="img/portfolio/gallery/2.png" style="padding-top: 11px;">
-                </div>
-                <div class="col-6 col-md-5 col-lg-3">
-                    <img src="img/portfolio/gallery/3.png">
-                </div>
-                <div class="col-6 col-md-5 col-lg-3">
-                    <img src="img/portfolio/gallery/4.png">
-                    <img src="img/portfolio/gallery/5.png" style="padding-top: 11px;">
-                </div>
-                <div class="col-6 col-md-5 col-lg-3">
-                    <img src="img/portfolio/gallery/6.png">
-                </div>
+        <div class="row justify-content-center">
+            <div class="col-8 col-md-5 col-lg-3">
+                <img src="libraries/img/portfolio/gallery/1.png ">
+                <img class="pt-lg-3 pt-md-3 pt-sm-3" src="libraries//img/portfolio/gallery/2.png">
             </div>
-
-            <div class="row">
-                <div class="col-6 col-md-5 col-lg-3 pt-2">
-                    <img src="img/portfolio/gallery/7.png">
-                    <img class="pt-2" src="img/portfolio/gallery/8.png">
-                </div>
-                <div class="col-6 col-md-5 col-lg-3 pt-2">
-                    <img src="img/portfolio/gallery/9.png">
-                </div>
-                <div class="col-6 col-md-5 col-lg-3 pt-2">
-                    <img src="img/portfolio/gallery/10.png">
-                    <img class="pt-2" src="img/portfolio/gallery/11.png">
-                </div>
-                <div class="col-6 col-md-5 col-lg-3 pt-2">
-
-                    <img src="img/portfolio/gallery/12.png">
-                </div>
+            <div class="col-8 col-md-5 col-lg-3">
+                <img src="libraries//img/portfolio/gallery/3.png">
             </div>
+            <div class="col-8 col-md-5 col-lg-3">
+                <img class="pt-md-2 pt-sm-2" src="libraries//img/portfolio/gallery/4.png">
+                <img class="pt-lg-3 pt-md-2 pt-sm-3" src="libraries//img/portfolio/gallery/5.png">
+            </div>
+            <div class="col-8 col-md-5 col-lg-3">
+                <img class="pt-md-2 pt-sm-2" src="libraries//img/portfolio/gallery/6.png">
+            </div>
+            <div class="col-8 col-md-5 col-lg-3 pt-2">
+              <img src="libraries//img/portfolio/gallery/7.png">
+              <img class="pt-lg-3 pt-md-3 pt-sm-3" src="libraries//img/portfolio/gallery/8.png">
+          </div>
+            <div class="col-8 col-md-5 col-lg-3 pt-2">
+                <img src="libraries//img/portfolio/gallery/9.png">
+            </div>
+            <div class="col-8 col-md-5 col-lg-3 pt-2">
+                <img src="libraries//img/portfolio/gallery/10.png">
+                <img class="pt-lg-3 pt-md-3 pt-sm-3" src="libraries//img/portfolio/gallery/11.png">
+            </div>
+            <div class="col-8 col-md-5 col-lg-3 pt-2">
 
-            <div class="row">
-                <div class="col text-center pt-3">
-                    <a href="">View All Pictures</a>
-                </div>
+                <img src="libraries//img/portfolio/gallery/12.png">
+            </div>
+        </div>
+
+        <div class="row">
+            
+        </div>
+
+        <div class="row">
+            <div class="col text-center pt-3">
+                <a href="">View All Pictures</a>
             </div>
         </div>
     </div>
-    
-    <!-- akhir gallery -->
+</div>
 
-    <!--awal Introdaction -->
+<!-- akhir gallery -->
 
-    <div class="introduction">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <a href=""><img src="img/portfolio/gallery/il.png" style="height: 280px;"></a>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <h3>Introduction</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam nisi nulla impedit possimus sapiente quaerat magnam assumenda rem delectus. Dolor totam temporibus quo soluta ratione voluptates ut explicabo atque!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime veniam quasi dolor perspiciatis aut eaque consequatur culpa cumque itaque atque vitae, tenetur omnis quod sapiente iste tempore delectus, corporis saepe.</p>
-                </div>
-            </div>
-        </div>
-    </div>    
 
-    <!--akhir Introdaction -->
-
-    <!-- awal AWA -->
-
-    <div class="section">
-        <div class="container">
-            <div class="row my-3">
-                <div class="col-12 col-md-4 col-lg-3 align-middle">
-                    <h2 class="text-center">AWA</h2>
-                </div>
-                <div class="col-12 col-md-8 col-lg-9 py-4 bg-primary">
-                    <h4>Web Designer</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores velit mollitia aliquid qui voluptatem quam consequuntur maiores rerum quas, cumque eveniet! Vero eveniet ipsa deserunt animi architecto!.</p>
-                </div>
-            </div>
-        </div>
+<footer class="mt-4">
+  <div class="container">
+    <div class="row pt-4">
+      <div class="col text-center">
+        <a href="#">
+          <i class="fa fa-inbox"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-industry"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-images"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-id-card"></i>
+        </a>
+      </div>
     </div>
+    <div class="row py-3 justify-content-center">
+      <div class="col-10 col-lg-5 text-center">
+        <p>All Right Reserved PixelsUi, Undraw.com , Unsplash.com &copy; Copyright belajarkoding.awaid Tangerang Indonesia</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
-    <!-- akhir AWA -->
-
-        <!-- awal footer -->
-
-
-        <footer class="footer mt-5" style="background-color: #007bff; text-align: center;">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col">
-                        <a href="">feadback</a>
-                        <a href="">term & condition</a>
-                        <a href="">privacy</a>
-                        <a href="">policy</a>
-                        <a href="">hall of fame</a>
-                    </div>
-                    <div class="col">
-                        <a href=""><img src="img/sosmed/asset-4.png"></a>
-                        <a href=""><img src="img/sosmed/asset-5.png"></a>
-                        <a href=""><img src="img/sosmed/asset-3.png"></a>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <div class="col">
-                        <a href="">2020 AWA. All Rights Resevert</a>
-                    </div>
-                    <div class="col">
-                        <a href="">info@awa.com</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    
-<!-- akhir footer -->
-
-
-    <!-- awal modal login -->
-
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-6">
-                            <img src="img/login.png" width="400px">
-                        </div>
-                        <div class="col">
-                            <div class="container my-5">
-                                <div class="row">
-                                    <div class="col-11">
-                                        <form>
-                                            <div class="form-group">
-                                              <label for="exampleInputEmail1">Username</label>
-                                              <input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="input your email">
-                                              <small id="emailHelp" class="form-text text-muted">Masukan username yang terdaftar awa.id</small>
-                                            </div>
-                                            <div class="form-group">
-                                              <label for="exampleInputPassword1">E-mail</label>
-                                              <input type="email" class="form-control" id="exampleInputemail1" placeholder="input your email">
-                                            </div>
-                                            <div class="form-group">
-                                              <label for="exampleInputPassword1">Password</label>
-                                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="input your password">
-                                            </div>
-                                                <button type="submit" class="btn btn-primary btn-block pt-2">Log in</button>
-                                          </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-
-     <!-- akhir modal login  -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+<script src="js/all.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
 </html>

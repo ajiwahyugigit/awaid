@@ -12,7 +12,7 @@ class Html extends Model
     protected $table = "html";
 
     protected $fillable = [
-        'hari', 'tanggal','judul','sub_judul','aktor','isi_content','gambar'
+        'hari', 'tanggal','judul','sub_judul','aktor','isi_content','foto'
     ];
     
     protected $hidden = [];

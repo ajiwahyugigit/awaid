@@ -44,7 +44,7 @@
                       <td>{{$user->email}}</td>
                       <td>{{$user->roles}}</td>
                       <td>
-                        <a href="#" class="btn btn-success">
+                        <a href="{{route('usersedit', $user->id)}}" class="btn btn-success">
                           <i class="fa fa-edit"></i>
                         </a>
                         <a href="#" class="btn btn-danger">

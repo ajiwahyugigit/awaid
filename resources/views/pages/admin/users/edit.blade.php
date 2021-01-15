@@ -32,19 +32,19 @@
                   </tr>
                 </thead>
                 <tbody>
-                  @foreach ($users as $user)
+                  
+                  {{-- @foreach($users as $user) --}}
                     <tr>
-                      <td>{{$user->id}}</td>
-                      <td>{{$user->name}}</td>
-                      <td>{{$user->email}}</td>
-                      <td>{{$user->roles}}</td>
+                      <td>{{$users->id}}</td>
+                      <td>{{$users->name}}</td>
+                      <td>{{$users->email}}</td>
+                      <td>{{$users->roles}}</td>
                       <td>
-                        <a href="{{route('users.edit', $user->id)}}" class="btn btn-success">
+                        {{-- <a href="{{route('users.edit', $user->id)}}" class="btn btn-success"> --}}
                           <i class="fa fa-edit"></i>
                         </a>
                       </td>
                     </tr>
-                  @endforeach
                 </tbody>
               </table>
             </div>

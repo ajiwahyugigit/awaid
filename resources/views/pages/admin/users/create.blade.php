@@ -23,8 +23,11 @@
           <div class="card-body">        
             <div class="table-responsive">
               <div class="form-group">
-                <label for="foto">Foto Profile</label>
-                <input type="file" class="form-control" name="foto" id="foto" accept=".jpeg,.png,.jpg"/>
+                <form action="/admin/users/store" method="post">
+                @csrf
+                  <label for="foto">Foto Profile</label>
+                  <input type="file" class="form-control" name="foto" id="foto" accept=".jpeg,.png,.jpg"/>
+                
             </div>
               <div class="form-group">
                 <label for="nama">Nama</label>
@@ -40,14 +43,15 @@
             </div>
               <div class="form-group">
                 <label for="status">Status</label>
-                <select class="form-control" name="status" id="status">
+                <select class="form-control" name="roles" id="status">
                   <option>Pilih Status</option>
-                  <option>Admin</option>
-                  <option>User</option>
+                  <option>ADMIN</option>
+                  <option>USER</option>
                 </select>
             </div>
-            <button class="btn btn-primary btn-block">Simpan</button>
-            </div>
+            <button class="btn btn-primary btn-block" type="submit">Simpan</button>
+          </form> 
+          </div>
           </div>
         </div>
 

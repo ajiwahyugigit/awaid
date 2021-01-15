@@ -27,9 +27,9 @@ class HtmlRequest extends FormRequest
             'hari' => 'required',
             'tanggal' => 'required',
             'judul' => 'required|max:255',
-            'sub_judul' => 'required',
+            'sub_judul' => 'nullable',
             'isi_content' => 'required',
-            'foto' => 'required'
+            'foto' => 'nullable'
         ];
     }
 }

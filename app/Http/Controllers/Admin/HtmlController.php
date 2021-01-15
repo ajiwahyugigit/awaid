@@ -23,13 +23,13 @@ class HtmlController extends Controller
 
     public function store(HtmlRequest $request)
     {
-        $nama = $request->nama;
+
         $foto = $request->file('foto');
-        $extension = $foto->extension();
         $nama_foto = "";
 
         if(!empty($foto)){
-            $nama_foto = time()."_".$nama.".".$extension;
+            $extension = $foto->extension();
+            $nama_foto = time()."_.".$extension;
             $nama_folder = 'img';
             $foto->move($nama_folder,$nama_foto);
         }
@@ -44,6 +44,65 @@ class HtmlController extends Controller
             'foto' =>$nama_foto
         ]);
     
+        return redirect()->route('html');
+    }
+
+    public function show($id)
+    {
+        //
+    }
+
+    public function edit($id) 
+    {
+        $html = Html::findOrFail($id);
+
+        return view('pages.admin.materi.html.edit', [
+            'html' =>$html
+        ]);
+    }
+
+    public function update($id, HtmlRequest $request)
+    {
+       
+        //$data = $request->all();
+        //$data = $request->validated();
+        $html = Html::findOrFail($id);
+        $foto = $request->file('foto');
+        $nama_foto = "";
+
+        if(!empty($foto)){
+            $extension = $foto->extension();
+            $nama_foto = time()."_.".$extension;
+            $nama_folder = 'img';
+            $foto->move($nama_folder,$nama_foto);
+        }
+        
+        $html->hari = $request->hari;
+        $html->tanggal = $request->tanggal;
+        $html->judul = $request->judul;
+        $html->sub_judul = $request->sub_judul;
+        $html->aktor = $request->aktor;
+        $html->isi_content = $request->isi_content;
+        $html->foto = $nama_foto;
+        $html->save();
+
+        // Html::create([
+        //     'hari' =>$request->hari,
+        //     'tanggal' =>$request->tanggal,
+        //     'judul' =>$request->judul,
+        //     'sub_judul' =>$request->sub_judul,
+        //     'aktor' =>$request->aktor,
+        //     'isi_content' =>$request->isi_content,
+        //     'foto' =>$nama_foto
+        // ]);
+        return redirect()->route('html');
+    }
+
+    public function destroy($id)
+    {
+        $html = Html::findOrFail($id);
+        $html->delete();
+
         return redirect()->route('html');
     }
 }

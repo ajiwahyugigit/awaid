@@ -21,51 +21,56 @@
             <h6 class="m-0 font-weight-bold text-sucbtn-success">Hypertext Markup Languages</h6>
           </div>
           <div class="card-body">
-            <a href="{{route('htmlcreate')}}" class="btn btn-primary mb-3">
-              Post<i class="fa fa-plus-circle pl-2"></i>
-            </a>
             
-            <div class="table-responsive">
-
-              @forelse ($htmls as $html)
-
-                  <img src="/img/{{$html->foto == '' ? 'default.png' : $html->foto}}" alt="" style="width: 160px">
-
-                  <span>{{$html->hari}}, {{$html->tanggal}}</span>
-                  <h4>{{$html->judul}}</h4>
-                  <span class="bg-dark text-light px-2 py-1" style="font-size: 12px; border-radius: 5px">{{$html->sub_judul}}</span>
-                  <span class="bg-success text-light px-2 py-1" style="font-size: 12px; border-radius: 5px">{{$html->aktor}}</span>
-                  <p class="mt-2">{{$html->isi_content}}</p>
-
-                  <span>Share : </span>
-               <a href="">
-                <i class="fa fa-inbox"></i>
+            
+            <div class="container">
+              <a href="{{route('htmlcreate')}}" class="btn btn-primary mb-3">
+                Post<i class="fa fa-plus-circle pl-2"></i>
               </a>
-              <a href="">
-                <i class="fa fa-info-circle"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-image"></i>
-              </a>
-              <br><br>
-              
-              <button class="btn btn-primary">
-                <i class="fas fa-pen"></i>
-              </button>
-              
-              <button class="btn btn-danger">
-                <i class="fa fa-trash"></i>
-              </button>
+              <div class="row">
+                @forelse ($htmls as $html)
+                <div class="col mt-4">
+                  <div class="card" style="width: 18rem; box-shadow: -3px 2px 9px rgb(199, 199, 199);">
 
-              @empty
+                    <img class="card-img-top p-1" src="/img/{{$html->foto == '' ? 'default.png' : $html->foto}}">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-family: Ubuntu Mono;">{{$html->judul}}</h5>
+                      <span style="background-color: rgb(54, 169, 223); padding: 5px; color: rgb(255, 255, 255); border-radius: 4px;">{{$html->sub_judul}}</span><br>
+
+                      <div class="icon mt-2 mb-2">
+                        <span style="font-family: Assistant; font-size: 12px;">
+                          <i class="fas fa-user-circle"></i>
+                          {{$html->aktor}}</span><br>
+  
+                        <p class="card-text" style="font-family: Assistant; font-size: 12px;">
+                          <i class="fas fa-clock"></i>
+                          {{$html->hari}}, {{$html->tanggal}}</p>
+                      </div>
+
+                        <a href="{{route('htmledit', $html->id)}}" class="btn btn-success">
+                          <i class="fa fa-edit"></i>
+                      </a>
+                        
+                         <form action="{{route('htmldestroy', $html->id)}}" method="post" class="d-inline">
+                              @csrf
+                              @method('delete')
+                              <button class="btn btn-danger">
+                                  <i class="fa fa-trash"></i>
+                              </button>
+                          </form>
+
+                    </div>
+                  </div>
+                </div>
+                @empty
                 <div class="alert alert-danger" role="alert">
                   Silahkan Post Content!
                 </div>
               @endforelse
+              </div>
             </div>
           </div>
         </div>
-
       </div>
       <!-- /.container-fluid -->
 
